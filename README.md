@@ -30,15 +30,12 @@ Follow the steps below to set up and run **Islamic-Academia** locally.
    ```bash
    git clone https://github.com/alimalikali/Islamic-Academia.git
    cd Islamic-Academia
+Contributing
+We welcome contributions to help improve the platform. If you would like to contribute, please follow the steps below:
 
-
-
-##Contributing
-###We welcome contributions to help improve the platform. If you would like to contribute, please follow the steps below:
-
-Fork the repository
-Create a new branch (git checkout -b feature-branch)
-Make your changes
-Commit your changes (git commit -am 'Add new feature')
-Push to the branch (git push origin feature-branch)
-Open a pull request
+Fork the repository.
+Create a new branch (git checkout -b feature-branch).
+Make your changes.
+Commit your changes (git commit -am 'Add new feature').
+Push to the branch (git push origin feature-branch).
+Open a pull request.
