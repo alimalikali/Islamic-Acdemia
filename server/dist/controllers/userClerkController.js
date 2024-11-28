@@ -17,7 +17,7 @@ const updateUser = (req, res) => __awaiter(void 0, void 0, void 0, function* () 
     try {
         const user = yield index_1.clerkClient.users.updateUserMetadata(userId, {
             publicMetadata: {
-                userType: userData.publicMetadata.userType,
+                userType: userData.publicMetadatauserType,
                 settings: userData.publicMetadata.settings,
             },
         });

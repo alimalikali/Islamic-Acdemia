@@ -1,3 +1,5 @@
+"use client"
+
 import { SignedIn, SignedOut, UserButton, useUser } from '@clerk/nextjs'
 import { dark } from "@clerk/themes";
 
@@ -7,8 +9,11 @@ import React from 'react'
 
 const NonDashboardNavbar = () => {
 
-    // const { user } = useUser();
-    // const userRole = user?.publicMetadata?.userType as "student" | "teacher";
+    const { user } = useUser();
+    const userRole = user?.publicMetadata?.userType as "student" | "teacher";
+
+    console.log(user?.publicMetadata.userType);
+    
 
     return (
         <nav className='nondashboard-navbar'>
@@ -33,7 +38,7 @@ const NonDashboardNavbar = () => {
                         <Bell className="nondashboard-navbar__notification-icon" />
                     </button>
 
-                    {/* <SignedIn>
+                    <SignedIn>
                         <UserButton
                             appearance={{
                                 baseTheme: dark,
@@ -43,10 +48,10 @@ const NonDashboardNavbar = () => {
                                 },
                             }}
                             showName={true}
-                        // userProfileMode="navigation"
-                        // userProfileUrl={
-                        //     userRole === "teacher" ? "/teacher/profile" : "/user/profile"
-                        // }
+                        userProfileMode="navigation"
+                        userProfileUrl={
+                            userRole === "teacher" ? "/teacher/profile" : "/user/profile"
+                        }
                         />
                     </SignedIn>
                     <SignedOut>
@@ -64,7 +69,7 @@ const NonDashboardNavbar = () => {
                         >
                             Sign up
                         </Link>
-                    </SignedOut> */}
+                    </SignedOut>
 
                 </div>
             </div>
