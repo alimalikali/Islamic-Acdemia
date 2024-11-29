@@ -1,6 +1,7 @@
 # Islamic-Academia
 
-**Islamic-Academia** is an online educational platform designed to provide Islamic education in a modern and accessible way. The platform offers various courses in Islamic studies, allowing students to learn at their own pace, interact with educators, and participate in a supportive community of learners. 
+**Islamic-Academia** is an online educational platform LMS webapp created by Dev Ali (Project by Intifada) to provide Islamic education in a modern and accessible way. The platform offers various courses in Islamic studies, allowing students to learn at their own pace, interact with educators, and participate in a supportive community of learners. 
+
 
 The system features course management, content delivery, quizzes, and a flexible user interface for both teachers and students.
 
