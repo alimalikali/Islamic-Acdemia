@@ -100,7 +100,7 @@ input[type="color"] {
 }
 
 .bg-sidebar {
-  @apply bg-customTeals-primarybg;
+  @apply bg-customTeals-secondarybg;
 }
 
 /* Filepond */
@@ -123,11 +123,11 @@ input[type="color"] {
 
 /* Search Page */
 .search {
-  @apply flex flex-col  text-foreground h-full mx-auto w-3/4;
+  @apply flex flex-col bg-background text-foreground h-full mx-auto w-3/4;
 }
 
 .search__title {
-  @apply font-normal text-2xl mt-14;
+  @apply font-normal text-customTeals-secondarybg text-2xl mt-14;
 }
 
 .search__subtitle {
@@ -156,7 +156,7 @@ input[type="color"] {
 }
 
 .selected-course__author {
-  @apply text-teal-400 text-sm pt-3;
+  @apply text-gray-300 text-sm pt-3;
 }
 
 .selected-course__enrollment-count {
@@ -168,7 +168,7 @@ input[type="color"] {
 }
 
 .selected-course__description {
-  @apply text-gray-500 mb-4;
+  @apply text-gray-400 mb-4;
 }
 
 .selected-course__sections {
@@ -198,7 +198,7 @@ input[type="color"] {
 
 /* Completion Page */
 .completion {
-  @apply flex flex-col h-full items-center justify-center bg-background text-foreground;
+  @apply flex flex-col h-full items-center justify-center bg-background text-customTeals-darkerTeal;
 }
 
 .completion__content {
@@ -206,7 +206,7 @@ input[type="color"] {
 }
 
 .completion__icon {
-  @apply mb-4 rounded-full bg-green-500 p-3 inline-flex items-center justify-center;
+  @apply mb-4 rounded-full bg-green-500 text-gray-100 p-3 inline-flex items-center justify-center;
 }
 
 .completion__title {
@@ -218,7 +218,7 @@ input[type="color"] {
 }
 
 .completion__action {
-  @apply mt-2 flex justify-center bg-secondary-700 rounded-lg px-4 py-2 hover:bg-secondary-600 cursor-pointer;
+  @apply mt-2 flex text-customTeals-primarybg justify-center bg-secondary-700 rounded-lg px-4 py-2 hover:bg-secondary-600 cursor-pointer;
 }
 
 /* Landing Page */
@@ -239,7 +239,7 @@ input[type="color"] {
 }
 
 .landing__description {
-  @apply text-lg text-teal-400 mb-8;
+  @apply text-lg text-gray-400 mb-8;
 }
 
 .landing__cta {
@@ -373,7 +373,7 @@ input[type="color"] {
 }
 
 .checkout-details__subtitle {
-  @apply mb-6 text-sm text-center text-teal-400 mx-auto;
+  @apply mb-6 text-sm text-center text-gray-400 mx-auto;
 }
 
 .checkout-details__form {
@@ -393,7 +393,7 @@ input[type="color"] {
 }
 
 .checkout-details__divider-text {
-  @apply px-4 text-sm text-teal-400 whitespace-nowrap;
+  @apply px-4 text-sm text-gray-400 whitespace-nowrap;
 }
 
 .checkout-details__auth {
@@ -430,7 +430,7 @@ input[type="color"] {
 }
 
 .payment__subtitle {
-  @apply text-sm text-teal-400;
+  @apply text-sm text-gray-400;
 }
 
 .payment__method {
@@ -467,11 +467,11 @@ input[type="color"] {
 }
 
 .billing__container {
-  @apply space-y-6 bg-customTeals-secondarybg;
+  @apply space-y-6 bg-customTeals-primarybg;
 }
 
 .billing__title {
-  @apply text-2xl font-semibold;
+  @apply text-2xl font-semibold text-customTeals-secondarybg;
 }
 
 .billing__filters {
@@ -479,15 +479,15 @@ input[type="color"] {
 }
 
 .billing__select {
-  @apply w-[180px] border-none bg-customTeals-primarybg;
+  @apply w-[180px] border border-customTeals-secondarybg text-customTeals-secondarybg bg-customTeals-primarybg;
 }
 
 .billing__select-content {
-  @apply bg-customTeals-primarybg;
+  @apply bg-customTeals-primarybg text-customTeals-secondarybg;
 }
 
 .billing__select-item {
-  @apply hover:!bg-white-50 hover:!text-customTeals-primarybg cursor-pointer;
+  @apply hover:!bg-gray-500 hover:!text-customTeals-primarybg cursor-pointer;
 }
 
 .billing__grid {
@@ -503,7 +503,7 @@ input[type="color"] {
 }
 
 .billing__table-header {
-  @apply bg-customTeals-darkTeal;
+  @apply bg-customTeals-darkerTeal;
 }
 
 .billing__table-header-row {
@@ -523,7 +523,7 @@ input[type="color"] {
 }
 
 .billing__table-body {
-  @apply bg-customTeals-primarybg min-h-[200px];
+  @apply bg-customTeals-secondarybg text-customTeals-primarybg min-h-[200px];
 }
 
 /* User Courses Page */
@@ -541,11 +541,11 @@ input[type="color"] {
 }
 
 .dashboard__content {
-  @apply flex flex-1 overflow-hidden;
+  @apply flex flex-1 overflow-hidden bg-customTeals-primarybg;
 }
 
 .dashboard__main {
-  @apply flex-grow min-h-screen transition-all duration-500 ease-in-out overflow-y-auto bg-customTeals-secondarybg;
+  @apply flex-grow min-h-screen transition-all duration-500 ease-in-out overflow-y-auto bg-customTeals-primarybg;
 }
 
 .dashboard__main--not-course {
@@ -553,12 +553,12 @@ input[type="color"] {
 }
 
 .dashboard__body {
-  @apply px-8 py-4;
+  @apply px-8 py-4 bg-customTeals-primarybg;
 }
 
 /* Course Page */
 .course {
-  @apply flex h-[100vh];
+  @apply flex h-[100vh] bg-customTeals-primarybg;
 }
 
 .course__container {
@@ -574,11 +574,11 @@ input[type="color"] {
 }
 
 .course__current-chapter {
-  @apply text-teal-400;
+  @apply text-gray-400;
 }
 
 .course__title {
-  @apply text-2xl text-white-50 font-semibold my-4;
+  @apply text-2xl text-customTeals-secondarybg font-semibold my-4;
 }
 
 .course__header {
@@ -630,7 +630,7 @@ input[type="color"] {
 }
 
 .course__content {
-  @apply flex gap-4 mt-12;
+  @apply flex gap-4 mt-12 text-customTeals-secondarybg;
 }
 
 .course__tabs {
@@ -662,7 +662,7 @@ input[type="color"] {
 }
 
 .course__instructor-card {
-  @apply w-1/3 h-min border-none bg-white-50/5 p-10 bg-customTeals-secondarybg;
+  @apply w-1/3 h-min border-none bg-white-50/5 p-10 bg-customTeals-secondarybg text-gray-400;
 }
 
 .course__instructor-info {
@@ -686,7 +686,7 @@ input[type="color"] {
 }
 
 .course__instructor-name {
-  @apply text-lg font-medium;
+  @apply text-lg font-medium text-customTeals-primarybg;
 }
 
 .course__instructor-title {
@@ -736,7 +736,7 @@ input[type="color"] {
 }
 
 .chapters-sidebar__section-content {
-  @apply pt-8 pb-8 bg-customTeals-primarybg/40;
+  @apply pt-8 pb-8 bg-customTeals-primarybg;
 }
 
 .chapters-sidebar__progress {
@@ -784,7 +784,7 @@ input[type="color"] {
 }
 
 .chapters-sidebar__chapter-number {
-  @apply border border-gray-600 rounded-full w-6 h-6 flex items-center justify-center text-xs text-teal-400;
+  @apply border border-gray-600 rounded-full w-6 h-6 flex items-center justify-center text-xs text-gray-400;
 }
 
 .chapters-sidebar__chapter-number--current {
@@ -953,24 +953,24 @@ input[type="color"] {
 }
 
 .accordion-section__trigger {
-  @apply hover:bg-gray-700/50 bg-customTeals-primarybg/50 px-4 py-3;
+  @apply hover:bg-customTeals-primarybg bg-customTeals-secondarybg text-customTeals-primarybg hover:text-customTeals-secondarybg px-4 py-3;
 }
 
 .accordion-section__title {
-  @apply text-teal-400 font-medium;
+  @apply text-gray-400 font-medium;
 }
 
 .accordion-section__content {
-  @apply bg-customTeals-secondarybg/50 px-4 py-4;
+  @apply bg-customTeals-secondarybg px-4 py-4;
 }
 
 .accordion-section__chapter {
-  @apply flex items-center text-teal-400/90 py-1;
+  @apply flex items-center text-gray-400/90 py-1;
 }
 
 /* Course Card */
 .course-card {
-  @apply flex flex-col w-full h-[340px] xl:h-[380px] border-none bg-customTeals-primarybg overflow-hidden cursor-pointer hover:bg-white-100/10 transition duration-200;
+  @apply flex flex-col w-full h-[340px] xl:h-[380px] border-none bg-customTeals-secondarybg overflow-hidden cursor-pointer hover:bg-customTeals-darkerTeal transition duration-200;
 }
 
 .course-card__header {
@@ -994,7 +994,7 @@ input[type="color"] {
 }
 
 .course-card__category {
-  @apply text-sm bg-customTeals-secondarybg rounded-full px-3 py-2 text-teal-400;
+  @apply text-sm bg-customTeals-secondarybg rounded-full px-3 py-2 text-gray-400;
 }
 
 .course-card__price {
@@ -1003,11 +1003,11 @@ input[type="color"] {
 
 /* Course Card Search */
 .course-card-search {
-  @apply bg-customTeals-secondarybg overflow-hidden rounded-lg hover:bg-white-100/10 transition duration-200 flex flex-col cursor-pointer border-2 h-full;
+  @apply bg-customTeals-secondarybg overflow-hidden rounded-lg hover:bg-customTeals-darkTeal transition duration-200 flex flex-col cursor-pointer border-2 h-full;
 }
 
 .course-card-search--selected {
-  @apply border-primary-600;
+  @apply border-primary-600 scale-105 bg-white-100 text-customTeals-secondarybg hover:bg-white-100 hover:text-customTeals-secondarybg;
 }
 
 .course-card-search--unselected {
@@ -1024,7 +1024,7 @@ input[type="color"] {
 
 /* Course Card Teacher */
 .course-card-teacher {
-  @apply w-full h-[400px] p-0 bg-background border-none text-foreground bg-customTeals-primarybg overflow-hidden hover:bg-white-100/10 transition duration-200 flex flex-col;
+  @apply w-full h-[400px] p-0 bg-background border-none text-foreground bg-customTeals-secondarybg overflow-hidden hover:bg-customTeals-darkerTeal transition duration-200 flex flex-col;
 }
 
 .course-card-teacher__header {
@@ -1134,15 +1134,15 @@ input[type="color"] {
 }
 
 .toolbar__search {
-  @apply w-full px-5 h-12 bg-customTeals-primarybg placeholder-customTeals-mutedTeal text-customTeals-mutedTeal border-none rounded-md focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring;
+  @apply w-full px-5 h-12 bg-customTeals-primarybg placeholder-customTeals-mutedTeal text-customTeals-mutedTeal border border-customTeals-secondarybg rounded-md focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring;
 }
 
 .toolbar__select {
-  @apply h-12 w-[180px] bg-customTeals-primarybg text-customTeals-mutedTeal border-none;
+  @apply h-12 w-[180px] bg-customTeals-primarybg text-customTeals-secondarybg border border-customTeals-secondarybg;
 }
 
 .toolbar__select-item {
-  @apply cursor-pointer hover:!bg-gray-100 hover:!text-customTeals-darkTeal;
+  @apply cursor-pointer hover:!bg-gray-100 hover:!text-customTeals-darkTeal !text-customTeals-mutedTeal;
 }
 
 /* Wizard Stepper */
@@ -1179,7 +1179,7 @@ input[type="color"] {
 }
 
 .wizard-stepper__text--active {
-  @apply text-white-100;
+  @apply text-customTeals-secondarybg;
 }
 
 .wizard-stepper__text--inactive {
@@ -1212,12 +1212,16 @@ input[type="color"] {
 }
 
 .nondashboard-navbar__brand {
-  @apply font-bold text-lg sm:text-xl hover:text-customTeals-mutedTeal;
+  @apply font-bold text-lg sm:text-xl hover:text-customTeals-mutedTeal text-customTeals-secondarybg;
 }
 
-.nondashboard-navbar__search-input {
+/* .nondashboard-navbar__search-input {
   @apply bg-customTeals-secondarybg pl-10 sm:pl-14 pr-6 sm:pr-20 py-3 sm:py-4 rounded-xl text-customTeals-mutedTeal hover:text-white-50 hover:bg-customTeals-darkerTeal transition-all duration-300 text-sm sm:text-base;
-}
+} */
+
+/* .nondashboard-navbar__search-input {
+  @apply bg-customTeals-primarybg hover:bg-fuchsia-50 border-2 border-customTeals-secondarybg pl-10 sm:pl-14 pr-6 sm:pr-20 py-3 sm:py-4 rounded-xl text-customTeals-mutedTeal hover:text-secondary-700 transition-all duration-300 text-sm sm:text-base;
+} */
 
 .nondashboard-navbar__search-icon {
   @apply absolute left-3 sm:left-5 top-1/2 transform -translate-y-1/2 text-customTeals-mutedTeal transition-all duration-300;
@@ -1228,15 +1232,15 @@ input[type="color"] {
 }
 
 .nondashboard-navbar__notification-button {
-  @apply relative w-7 h-7 sm:w-8 sm:h-8 bg-teal-800 rounded-full flex items-center justify-center;
+  @apply relative w-7 h-7 sm:w-8 sm:h-8 bg-customTeals-secondarybg rounded-full flex items-center justify-center;
 }
 
 .nondashboard-navbar__notification-indicator {
-  @apply absolute top-0 right-0 bg-teal-500 h-1.5 sm:h-2 w-1.5 sm:w-2 rounded-full;
+  @apply absolute top-0 right-0 bg-blue-500 h-1.5 sm:h-2 w-1.5 sm:w-2 rounded-full;
 }
 
 .nondashboard-navbar__notification-icon {
-  @apply text-teal-400 w-4 h-4 sm:w-5 sm:h-5;
+  @apply text-gray-400 w-4 h-4 sm:w-5 sm:h-5;
 }
 
 .nondashboard-navbar__auth-button--login {
@@ -1244,18 +1248,18 @@ input[type="color"] {
 }
 
 .nondashboard-navbar__auth-button--signup {
-  @apply bg-indigo-600 px-3 sm:px-4 py-1.5 sm:py-2 rounded-md hover:bg-primary-600 hover:text-customTeals-primarybg text-sm sm:text-base;
+  @apply bg-customTeals-secondarybg px-3 sm:px-4 py-1.5 sm:py-2 rounded-md hover:bg-primary-600 hover:text-customTeals-primarybg text-sm sm:text-base;
 }
 
 /* Add these classes for group hover effects */
 .group:hover .dashboard-navbar__search-icon,
 .group:hover .nondashboard-navbar__search-icon {
-  @apply text-white-50;
+  @apply text-primary-800;
 }
 
 .group:hover .dashboard-navbar__search-input,
 .group:hover .nondashboard-navbar__search-input {
-  @apply bg-customTeals-darkerTeal text-white-50;
+  @apply bg-customTeals-primarybg text-customTeals-secondarybg;
 }
 
 /* Shared Notification Settings */
@@ -1272,7 +1276,7 @@ input[type="color"] {
 }
 
 .notification-settings__submit {
-  @apply !mt-8 text-gray-100 bg-primary-700 hover:bg-primary-600;
+  @apply !mt-8 text-gray-100 hover:text-customTeals-secondarybg bg-primary-700 hover:bg-primary-600;
 }
 
 /* Header */
@@ -1281,7 +1285,7 @@ input[type="color"] {
 }
 
 .header__title {
-  @apply text-3xl font-bold text-white-50;
+  @apply text-3xl font-bold text-customTeals-darkerTeal;
 }
 
 .header__subtitle {
@@ -1290,7 +1294,7 @@ input[type="color"] {
 
 /* Course Card Teacher Additional Classes */
 .course-card-teacher__content {
-  @apply w-full pb-6 pt-4 flex-grow flex flex-col justify-between text-teal-400;
+  @apply w-full pb-6 pt-4 flex-grow flex flex-col justify-between text-gray-400;
 }
 
 .course-card-teacher__title {
@@ -1315,15 +1319,15 @@ input[type="color"] {
 }
 
 .navbar__notification-button {
-  @apply relative w-7 h-7 sm:w-8 sm:h-8 bg-teal-800 rounded-full flex items-center justify-center;
+  @apply relative w-7 h-7 sm:w-8 sm:h-8 bg-gray-800 rounded-full flex items-center justify-center;
 }
 
 .navbar__notification-indicator {
-  @apply absolute top-0 right-0 bg-teal-500 h-1.5 sm:h-2 w-1.5 sm:w-2 rounded-full;
+  @apply absolute top-0 right-0 bg-blue-500 h-1.5 sm:h-2 w-1.5 sm:w-2 rounded-full;
 }
 
 .navbar__notification-icon {
-  @apply text-teal-400 w-4 h-4 sm:w-5 sm:h-5;
+  @apply text-gray-400 w-4 h-4 sm:w-5 sm:h-5;
 }
 
 .navbar__search-icon {
@@ -1404,7 +1408,7 @@ input[type="color"] {
 }
 
 .app-sidebar__collapse-icon {
-  @apply text-teal-400 w-5 h-5 group-data-[collapsible=icon]:hidden;
+  @apply text-gray-400 w-5 h-5 group-data-[collapsible=icon]:hidden;
 }
 
 .app-sidebar__nav-menu {
@@ -1432,7 +1436,7 @@ input[type="color"] {
 }
 
 .app-sidebar__signout {
-  @apply text-primary-700 pl-8;
+  @apply text-customTeals-primarybg pl-8;
 }
 
 /* NonDashboard Layout */
@@ -1507,7 +1511,7 @@ input[type="color"] {
 }
 
 .dashboard-navbar__search-input {
-  @apply bg-customTeals-primarybg pl-10 sm:pl-14 pr-6 sm:pr-20 py-3 sm:py-4 rounded-xl text-customTeals-mutedTeal hover:text-white-50 hover:bg-customTeals-darkerTeal transition-all duration-300 text-sm sm:text-base;
+  @apply bg-customTeals-primarybg pl-10 sm:pl-14 pr-6 sm:pr-20 py-3 sm:py-4 rounded-xl border border-customTeals-secondarybg text-customTeals-mutedTeal hover:text-customTeals-secondarybg hover:bg-customTeals-primarybg transition-all duration-300 text-sm sm:text-base;
 }
 
 .dashboard-navbar__search-icon {
@@ -1530,11 +1534,13 @@ input[type="color"] {
   @apply text-customTeals-mutedTeal hover:text-white-50 transition-colors;
 }
 
-@layer base {
-  * {
-    @apply border-border;
-  }
-  body {
-    @apply bg-background text-foreground;
-  }
+
+.cl-internal-1dauvpw {
+  @apply hidden
 }
+
+.cl-internal-1hp5nqm {
+  @apply hidden
+
+}
+

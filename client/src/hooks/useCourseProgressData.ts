@@ -46,11 +46,11 @@ export const useCourseProgressData = () => {
       return false;
 
     const section = userProgress.sections.find(
-      (s) => s.sectionId === currentSection.sectionId
+      (s: { sectionId: string; }) => s.sectionId === currentSection.sectionId
     );
     return (
       section?.chapters.some(
-        (c) => c.chapterId === currentChapter.chapterId && c.completed
+        (c: { chapterId: string; completed: any; }) => c.chapterId === currentChapter.chapterId && c.completed
       ) ?? false
     );
   };

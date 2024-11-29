@@ -86,7 +86,7 @@ export const CustomFormField: React.FC<FormFieldProps> = ({
             placeholder={placeholder}
             {...field}
             rows={3}
-            className={`border-none bg-customTeals-darkTeal p-4 ${inputClassName}`}
+            className={`border border-customTeals-secondarybg bg-customTeals-primarybg p-4  text-customTeals-mutedTeal ${inputClassName}`}
           />
         );
       case "select":
@@ -97,7 +97,7 @@ export const CustomFormField: React.FC<FormFieldProps> = ({
             onValueChange={field.onChange}
           >
             <SelectTrigger
-              className={`w-full border-none bg-customTeals-primarybg p-4 ${inputClassName}`}
+              className={`w-full border text-customTeals-darkTeal border-customTeals-secondarybg bg-customTeals-primarybg p-4 ${inputClassName}`}
             >
               <SelectValue placeholder={placeholder} />
             </SelectTrigger>
@@ -106,7 +106,7 @@ export const CustomFormField: React.FC<FormFieldProps> = ({
                 <SelectItem
                   key={option.value}
                   value={option.value}
-                  className={`cursor-pointer hover:!bg-gray-100 hover:!text-customTeals-darkTeal`}
+                  className={`cursor-pointer hover:!bg-gray-100 hover:!text-customTeals-darkTeal !text-customTeals-darkTeal`}
                 >
                   {option.label}
                 </SelectItem>
@@ -155,7 +155,7 @@ export const CustomFormField: React.FC<FormFieldProps> = ({
             type="number"
             placeholder={placeholder}
             {...field}
-            className={`border-none bg-customTeals-darkTeal p-4 ${inputClassName}`}
+            className={`border border-customTeals-secondarybg bg-customTeals-primarybg p-4 text-customTeals-mutedTeal ${inputClassName}`}
             disabled={disabled}
           />
         );
@@ -174,7 +174,7 @@ export const CustomFormField: React.FC<FormFieldProps> = ({
             type={type}
             placeholder={placeholder}
             {...field}
-            className={`border-none bg-customTeals-primarybg p-4 ${inputClassName}`}
+            className={`border border-customTeals-secondarybg bg-customTeals-primarybg text-customTeals-mutedTeal p-4 ${inputClassName}`}
             disabled={disabled}
           />
         );

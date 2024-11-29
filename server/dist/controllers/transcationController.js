@@ -15,8 +15,8 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.createTransaction = exports.createStripePaymentIntent = exports.listTransactions = void 0;
 const stripe_1 = __importDefault(require("stripe"));
 const dotenv_1 = __importDefault(require("dotenv"));
-const courseModel_1 = __importDefault(require("../models/courseModel"));
 const transactionModel_1 = __importDefault(require("../models/transactionModel"));
+const courseModel_1 = __importDefault(require("../models/courseModel"));
 const userCourseProgressModel_1 = __importDefault(require("../models/userCourseProgressModel"));
 dotenv_1.default.config();
 if (!process.env.STRIPE_SECRET_KEY) {
@@ -46,12 +46,10 @@ const createStripePaymentIntent = (req, res) => __awaiter(void 0, void 0, void 0
     }
     try {
         const paymentIntent = yield stripe.paymentIntents.create({
-            amount,
-            currency: "usd",
-            automatic_payment_methods: {
-                enabled: true,
-                allow_redirects: "never",
-            },
+            amount: amount * 100,
+            currency: "inr",
+            description: "Software development services",
+            payment_method_types: ["card"],
         });
         res.json({
             message: "",
