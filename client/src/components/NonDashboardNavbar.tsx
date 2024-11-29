@@ -12,9 +12,6 @@ const NonDashboardNavbar = () => {
     const { user } = useUser();
     const userRole = user?.publicMetadata?.userType as "student" | "teacher";
 
-    console.log(user?.publicMetadata.userType);
-    
-
     return (
         <nav className='nondashboard-navbar'>
             <div className="nondashboard-navbar__container">
@@ -24,7 +21,12 @@ const NonDashboardNavbar = () => {
                     </Link>
                     <div className="flex items-center gap-4">
                         <div className="relative group">
-                            <Link href="/search" className="nondashboard-navbar__search-input" scroll={false}>
+                            <Link href="/search"
+                                className="bg-customTeals-primarybg  border
+                                 border-customTeals-secondarybg pl-10 sm:pl-14 pr-6 sm:pr-20 py-3 
+                                 sm:py-4 rounded-xl text-customTeals-mutedTeal hover:text-primary-800 
+                                 transition-all duration-300 text-sm sm:text-base" 
+                                 scroll={false}>
                                 <span className="hidden sm:inline">Search Courses</span>
                                 <span className="sm:hidden">Search</span>
                             </Link>
@@ -48,10 +50,10 @@ const NonDashboardNavbar = () => {
                                 },
                             }}
                             showName={true}
-                        userProfileMode="navigation"
-                        userProfileUrl={
-                            userRole === "teacher" ? "/teacher/profile" : "/user/profile"
-                        }
+                            userProfileMode="navigation"
+                            userProfileUrl={
+                                userRole === "teacher" ? "/teacher/profile" : "/user/profile"
+                            }
                         />
                     </SignedIn>
                     <SignedOut>

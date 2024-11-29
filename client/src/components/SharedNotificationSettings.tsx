@@ -68,9 +68,9 @@ const SharedNotificationSettings = ({
           className="notification-settings__form"
         >
           <div className="notification-settings__fields">
-           <CustomFormField name="courseNotifications" label="Course Notifications" type="switch"/>
-            <CustomFormField name="emailAlerts" label="Email Alerts" type="switch"/>
-            <CustomFormField name="smsAlerts" label="SMS Alerts" type="switch"/>
+           <CustomFormField name="courseNotifications" label="Course Notifications" type="switch" labelClassName="text-customTeals-darkTeal"/>
+            <CustomFormField name="emailAlerts" label="Email Alerts" type="switch" labelClassName="text-customTeals-darkTeal"/>
+            <CustomFormField name="smsAlerts" label="SMS Alerts" type="switch" labelClassName="text-customTeals-darkTeal"/>
 
             <CustomFormField name="notificationFrequency" label="Notification Frequency" type="select" options={[
                 { value: "immediate", label: "Immediate" },

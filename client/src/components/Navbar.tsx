@@ -22,7 +22,7 @@ const Navbar = ({ isCoursePage }: { isCoursePage: boolean }) => {
 
           <div className="flex items-center gap-4">
             <div className="relative group">
-              <Link href="/search" className={cn("dashboard-navbar__search-input", { "!bg-customTeals-secondarybg": isCoursePage, })} scroll={false}>
+              <Link href="/search" className={cn("dashboard-navbar__search-input", { "!bg-customTeals-primarybg": isCoursePage, })} scroll={false}>
                 <span className="hidden sm:inline">Search Courses</span>
                 <span className="sm:hidden">Search</span>
               </Link>
@@ -38,7 +38,7 @@ const Navbar = ({ isCoursePage }: { isCoursePage: boolean }) => {
           </button>
 
           <UserButton
-            appearance={{ baseTheme: dark, elements: { userButtonOuterIdentifier: "text-customTeals-dirtyGrey", userButtonBox: "scale-90 sm:scale-100",  },  }}
+            appearance={{ baseTheme: dark, elements: { userButtonOuterIdentifier: "text-customTeals-mutedTeal", userButtonBox: "scale-90 sm:scale-100",  },  }}
             showName={true}
             userProfileMode="navigation"
             userProfileUrl={ userRole === "teacher" ? "/teacher/profile" : "/user/profile"  }

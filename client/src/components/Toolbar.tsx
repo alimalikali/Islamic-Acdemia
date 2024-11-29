@@ -29,14 +29,14 @@ const Toolbar = ({ onSearch, onCategoryChange }: ToolbarProps) => {
         <SelectTrigger className="toolbar__select">
           <SelectValue placeholder="Categories" />
         </SelectTrigger>
-        <SelectContent className="bg-customgreys-primarybg hover:bg-customgreys-primarybg">
+        <SelectContent className="bg-customTeals-primarybg hover:bg-customTeals-primarybg">
           <SelectItem value="all" className="toolbar__select-item">
             All Categories
           </SelectItem>
           {courseCategories.map((category) => (
             <SelectItem
               key={category.value}
-              value={category.value}
+              value={category.label}
               className="toolbar__select-item"
             >
               {category.label}

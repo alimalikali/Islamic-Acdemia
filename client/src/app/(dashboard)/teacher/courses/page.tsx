@@ -33,11 +33,8 @@ const Courses = () => {
     if (!courses) return [];
 
     return courses.filter((course) => {
-      const matchesSearch = course.title
-        .toLowerCase()
-        .includes(searchTerm.toLowerCase());
-      const matchesCategory =
-        selectedCategory === "all" || course.category === selectedCategory;
+      const matchesSearch = course.title.toLowerCase().includes(searchTerm.toLowerCase());
+        const matchesCategory = selectedCategory === "all" || course.category.toLowerCase() === selectedCategory.toLowerCase();
       return matchesSearch && matchesCategory;
     });
   }, [courses, searchTerm, selectedCategory]);
@@ -47,13 +44,11 @@ const Courses = () => {
       scroll: false,
     });
   };
-
   const handleDelete = async (course: Course) => {
     if (window.confirm("Are you sure you want to delete this course?")) {
       await deleteCourse(course.courseId).unwrap();
     }
   };
-
   const handleCreateCourse = async () => {
     if (!user) return;
 
@@ -65,7 +60,6 @@ const Courses = () => {
       scroll: false,
     });
   };
-
   if (isLoading) return <Loading />;
   if (isError || !courses) return <div>Error loading courses.</div>;
 

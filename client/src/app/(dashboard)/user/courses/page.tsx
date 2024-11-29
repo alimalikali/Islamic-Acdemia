@@ -55,7 +55,6 @@ const Courses = () => {
       });
     }
   };
-  console.log(courses,"courses");
   
   if (!isLoaded || isLoading) return <Loading />;
   if (!user) return <div>Please sign in to view your courses.</div>;

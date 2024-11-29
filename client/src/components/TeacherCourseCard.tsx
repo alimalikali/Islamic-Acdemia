@@ -27,6 +27,7 @@ const TeacherCourseCard = ({
           height={150}
           className="course-card-teacher__image"
           priority
+          unoptimized
         />
       </CardHeader>
 

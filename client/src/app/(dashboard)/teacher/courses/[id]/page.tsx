@@ -78,7 +78,7 @@ const CourseEditor = () => {
     <div>
       <div className="flex items-center gap-5 mb-5">
         <button
-          className="flex items-center border border-customgreys-dirtyGrey rounded-lg p-2 gap-2 cursor-pointer hover:bg-customgreys-dirtyGrey hover:text-white-100 text-customgreys-dirtyGrey"
+          className="flex items-center border border-customTeals-mutedTeal rounded-lg p-2 gap-2 cursor-pointer hover:bg-customTeals-mutedTeal hover:text-white-100 text-customTeals-mutedTeal"
           onClick={() => router.push("/teacher/courses", { scroll: false })}
         >
           <ArrowLeft className="w-4 h-4" />
@@ -98,11 +98,10 @@ const CourseEditor = () => {
                   label={methods.watch("courseStatus") ? "Published" : "Draft"}
                   type="switch"
                   className="flex items-center space-x-2"
-                  labelClassName={`text-sm font-medium ${
-                    methods.watch("courseStatus")
+                  labelClassName={`text-sm font-medium ${methods.watch("courseStatus")
                       ? "text-green-500"
                       : "text-yellow-500"
-                  }`}
+                    }`}
                   inputClassName="data-[state=checked]:bg-green-500"
                 />
                 <Button
@@ -151,6 +150,7 @@ const CourseEditor = () => {
                       label: "Artificial Intelligence",
                     },
                   ]}
+                  className="text-customTeals-secondarybg "
                   initialValue={course?.category}
                 />
 
@@ -164,9 +164,9 @@ const CourseEditor = () => {
               </div>
             </div>
 
-            <div className="bg-customgreys-darkGrey mt-4 md:mt-0 p-4 rounded-lg basis-1/2">
+            <div className="bg-customTeals-primarybg border border-customTeals-secondarybg mt-4 md:mt-0 p-4 rounded-lg basis-1/2">
               <div className="flex justify-between items-center mb-2">
-                <h2 className="text-2xl font-semibold text-secondary-foreground">
+                <h2 className="text-2xl font-semibold text-customTeals-secondarybg">
                   Sections
                 </h2>
 
@@ -191,7 +191,7 @@ const CourseEditor = () => {
               ) : sections.length > 0 ? (
                 <DroppableComponent />
               ) : (
-                <p>No sections available</p>
+                <p className="text-customTeals-secondarybg">No sections available</p>
               )}
             </div>
           </div>

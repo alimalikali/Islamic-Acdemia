@@ -34,7 +34,6 @@ const PaymentPageContent = () => {
 
     const baseUrl = process.env.NEXT_PUBLIC_LOCAL_URL || process.env.NEXT_PUBLIC_VERCEL_URL;
 
-    console.log(baseUrl, "base");
 
     const result = await stripe.confirmPayment({
       elements,
@@ -43,7 +42,6 @@ const PaymentPageContent = () => {
       },
       redirect: "if_required",
     });
-    console.log(result, "str");
 
 
     if (result.paymentIntent?.status === "succeeded") {
@@ -103,7 +101,7 @@ const PaymentPageContent = () => {
 
       {/* Navigation Buttons */}
       <div className="payment__actions">
-        <Button className="hover:bg-white-50/10" onClick={handleSignOutAndNavigate} variant="outline" type="button">
+        <Button className="text-customTeals-secondarybg border border-customTeals-secondarybg" onClick={handleSignOutAndNavigate} variant="outline" type="button">
           Switch Account
         </Button>
         <Button form="payment-form" type="submit" className="payment__submit" disabled={!stripe || !elements}>

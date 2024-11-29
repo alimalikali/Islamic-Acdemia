@@ -20,7 +20,7 @@ const CompletionPage = () => {
       <div className="completion__support">
         <p>
           Need help? Contact our{" "}
-          <Button variant="link" asChild className="p-0 m-0 text-primary-700">
+          <Button variant="link" asChild className="p-0 m-0 text-primary-500">
             <a href="mailto:alimalikali1928@gmail.com">customer support</a>
           </Button>
           .

@@ -42,7 +42,7 @@ const AppSidebar = () => {
   const currentNavLinks = navLinks[userType];
 
   return (
-    <Sidebar collapsible="icon" style={{ height: "100vh" }} className="bg-customTeals-primarybg border-none shadow-lg">
+    <Sidebar collapsible="icon" style={{ height: "100vh" }} className=" border-none shadow-lg">
 
       <SidebarHeader>
         <SidebarMenu className="app-sidebar__menu">
@@ -50,7 +50,7 @@ const AppSidebar = () => {
             <SidebarMenuButton size="lg" onClick={() => toggleSidebar()} className="group hover:bg-customTeals-secondarybg">
               <div className="app-sidebar__logo-container group">
                 <div className="app-sidebar__logo-wrapper">
-                  <Image src="/logoIA.jpeg" alt="logo" width={25} height={20} className="app-sidebar__logo" />
+                  <Image src="/quran.png" alt="logo" width={25} height={20} className="app-sidebar__logo" />
                   <p className="app-sidebar__title">Islamic Acdemia</p>
                 </div>
                 <PanelLeft className="app-sidebar__collapse-icon" />
